@@ -1,7 +1,26 @@
 aid: myr
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/myr.png
 name: MYR
-description: MYR is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: MYR (formerly Koomi) is a cloud-based point-of-sale (POS) platform built for quick-service
+  restaurants (QSRs) across North America, serving 1,500+ locations including coffee shops, food trucks,
+  burger joints, pizzerias, sushi shops and bubble tea shops. The all-in-one system handles order
+  processing across in-store, online-ordering and delivery channels, inventory management, digital
+  loyalty programs, real-time reporting and hardware (iPads, payment terminals, receipt printers). MYR
+  ships pre-built integrations with delivery marketplaces (Uber Eats, DoorDash, Grubhub, Skip, Ritual),
+  accounting (QuickBooks Online, Wave, Sage, Acumatica), scheduling (7shifts), inventory (WISK) and
+  loyalty/gift-card platforms (DataCandy). It does not publish a public developer program or API at this
+  time; the merchant back office runs at admin.koomi.com.
 url: https://raw.githubusercontent.com/api-evangelist/myr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Point of Sale
+- Restaurants
+- Quick Service Restaurants
+- Food Service Technology
+- Payments
+- Loyalty
+- Restaurant Management
+- Integrations
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,22 @@ maintainers:
 common:
 - type: Website
   url: https://myr.io/
+- type: Pricing
+  url: https://myr.io/pricing/
+- type: Blog
+  url: https://myr.io/blog/
+- type: HelpCenter
+  url: https://myr.io/help/
+- type: Login
+  url: https://admin.koomi.com/
+- type: TermsOfService
+  url: https://myr.io/terms-of-use/
+- type: PrivacyPolicy
+  url: https://myr.io/privacy-policy/
+- type: DomainSecurity
+  url: security/myr-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
